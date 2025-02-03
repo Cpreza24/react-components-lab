@@ -1,5 +1,5 @@
 import React from 'react';
-import './WeatherForecast'
+import './WeatherForecast.css'
 
 function WeatherForecast({ weatherForecasts }) {
   return (
@@ -8,9 +8,9 @@ function WeatherForecast({ weatherForecasts }) {
       weatherForecasts.map((weatherForecast) => (
         <div className="weather">
           <h2>{weatherForecast.day}</h2>
-          <img src={weatherForecast.img} alt="" />
-          <p><span>conditions: {weatherForecast.conditions} </span>current weather conditions</p>
-          <p><span>time: {weatherForecast.time} </span>time of day</p>
+          <img src={weatherForecast.img} alt='image of weather conditions' />
+          <p><span>conditions: {weatherForecast.conditions} </span></p>
+          <p><span>time: {weatherForecast.time} </span></p>
         </div>
       ))
     }
